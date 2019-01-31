@@ -48,11 +48,28 @@
             android:afterTextChanged="@{(editable)->MainActivityViewModel.onAfterTextChanged(editable)}"
             android:ems="10"
             android:inputType="textPersonName"
+            android:onTextChanged="@{MainActivityViewModel.onTextChanged}"
             android:text="@string/name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             bind:toastMessage="@{MainActivityViewModel.toastMessage}" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="192dp"
+            android:layout_marginLeft="192dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="219dp"
+            android:layout_marginRight="219dp"
+            android:layout_marginBottom="595dp"
+            android:text="@{MainActivityViewModel.text}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
