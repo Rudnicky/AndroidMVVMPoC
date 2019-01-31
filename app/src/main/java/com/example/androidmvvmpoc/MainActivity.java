@@ -3,6 +3,8 @@ package com.example.androidmvvmpoc;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.androidmvvmpoc.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
