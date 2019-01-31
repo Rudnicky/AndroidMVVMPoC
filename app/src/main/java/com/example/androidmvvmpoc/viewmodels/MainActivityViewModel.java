@@ -13,6 +13,10 @@ public class MainActivityViewModel extends BaseObservable {
         setToastMessage("Button clicked!");
     }
 
+    public void onAfterTextChanged(CharSequence sequence) {
+        setToastMessage(sequence.toString());
+    }
+
     public String getToastMessage() {
         return toastMessage;
     }
